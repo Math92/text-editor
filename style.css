@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Arial';
+    src: url('/fonts/Arial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comic Sans Ms';
+    src: url('/fonts/Comic_Sans_MS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Courier New';
+    src: url('/fonts/Courier_New.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('/fonts/Georgia.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('/fonts/Impact.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('/fonts/Times_New_Roman.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('/fonts/Trebuchet_MS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-C.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('/fonts/Verdana.ttf') format('truetype');
+}
+
+/* Resto de tu CSS... */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/back-body.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90vmin;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+    margin: 2rem;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    color: #020929;
+    cursor: pointer;
+}
+
+
+
+select {
+    padding: 7px;
+    border: 1px solid #020929;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.options label,
+.options select {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+#text-input {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    min-height: 50vh;
+    /* Cambio de 'height' a 'min-height' */
+    width: 100%;
+    /* Asegura que tome el ancho completo del contenedor padre */
+    overflow: auto;
+    /* Añade un scroll si el contenido excede la altura del div */
+}
+
+.btn {
+    margin: 0.5rem;
+}
+
+
+.active {
+    background-color: #e0e9ff;
+}
